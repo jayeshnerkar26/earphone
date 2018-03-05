@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"><title>shopping</title><link href=./static/css/app.f2f6141df128bd7995aae8512b08ed8e.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.48f736873aab05157f33.js></script><script type=text/javascript src=./static/js/vendor.f0cc26426c25c5007654.js></script><script type=text/javascript src=./static/js/app.44086043e498adbb52e4.js></script></body></html><script>(function (doc, win) {
+    var docEl = doc.documentElement,   //页面元素
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',  //orientationchange用户翻转移动设备    resize调整浏览器窗口的大小时，发生 resize 事件
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;  //网页可视窗口
+        if (!clientWidth) return;
+        if(clientWidth>=1080){
+          docEl.style.fontSize = '100px';
+        }else{
+          docEl.style.fontSize = 100 * (clientWidth / 1080) + 'px';
+        }
+      };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window);</script>
